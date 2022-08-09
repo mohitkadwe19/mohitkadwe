@@ -307,117 +307,77 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Google Cloud",
-      subtitle: "Google Cloud Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1r0hYt8Pp0N0u_4Tg-poMF1Qv3LkoKVAP/view",
-      alt_name: "MongoDB University",
-      // color_code: "#2AAFED",
-      color_code: "#2AAFED",
-    },
-    {
-      title: "Hackathon",
-      subtitle: "Backyard Hacks 2.0",
-      logo_path: "hackathon1.png",
-      // certificate_link:
-      //   "https://drive.google.com/file/d/1Y-HT1flWDfeyfnfqVr3ubNgGIcnuUEYt/view?usp=sharing",
-      alt_name: "hackathon",
+      title: "Oracle Cloud Academy",
+      subtitle: "Database Foundations",
+      logo_path: "oracle_logo.png",
+      certificate_link: "https://drive.google.com/file/d/16xyaNdvy74As4N2Qig4lZHqh6X0eBAkg/view?usp=sharing",
+      alt_name: "Oracle Academy",
       color_code: "#f47e2c",
     },
     {
-      title: "Hackathon",
-      subtitle: "HyperHacks",
-      logo_path: "hackathon2.png",
-      // certificate_link:
-      //   "https://drive.google.com/file/d/1Y-HT1flWDfeyfnfqVr3ubNgGIcnuUEYt/view?usp=sharing",
-      alt_name: "hackathon",
-      color_code: "#E2405F",
-    },
-    // {
-    //   title: "A300: Atlas Security",
-    //   subtitle: "MongoDB University",
-    //   logo_path: "mongo.png",
-    //   certificate_link:
-    //     "https://drive.google.com/file/d/12u_tkvhgB-K2TIm-RDdJOwYbQ9ccqiqA/view?usp=sharing",
-    //   alt_name: "MongoDB University",
-    //   // color_code: "#F6B808",
-    //   color_code: "#47A048",
-    // },
-    {
-      title: "Contributor's Hack",
-      subtitle: "Hakin Codes",
-      logo_path: "HakinCodes.jfif",
-      certificate_link:
-        "https://drive.google.com/file/d/1xvyy1M05lQN-s2VKw_Qvz6E7rPwrK2qm/view?usp=sharing",
-      alt_name: "Opensource Event",
-      color_code: "#fefd7b",
-    },
-    // {
-    //   title: "MLH Local Hack Day: Build",
-    //   subtitle: "Major League Hacking",
-    //   logo_path: "mlh-logo.svg",
-    //   certificate_link:
-    //     "https://drive.google.com/file/d/1ws7g2Oepu76vDFir6SvR_emFAMSkB2ZQ/view?usp=sharing",
-    //   alt_name: "Google",
-    //   color_code: "#fe0037",
-    // },
-    {
-      title: "Olympiad",
-      subtitle: "Ramanujan Mathematics Olympiad",
-      logo_path: "Olympiad.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1SAKHjKisJIY3-FRZQGKLusdsGDusXAjX/view",
-      alt_name: "Postman",
-      // color_code: "#f36c3d",
-      color_code: "#fffbf3",
+      title: "Cisco Netacad",
+      subtitle: "CPA : Programming Essentials in C++",
+      logo_path: "cisco_netacad_logo.png",
+      certificate_link: "https://drive.google.com/file/d/1kTEva05lc07YckcCeYygn2_ZHAjQBT4I/view?usp=sharing",
+      alt_name: "Cisco Netacad",
+      color_code: "#fff",
     },
     {
-      title: "Competitive Programming",
-      subtitle: "Reply Challenges",
-      logo_path: "Reply.jfif",
-      certificate_link:
-        "https://drive.google.com/file/d/1KamrXJPTrF3zfMuEerbSnFUjOkt-agKT/view",
-      alt_name: "Reply",
-      color_code: "#2AAFED",
+      title: "Cisco Netacad",
+      subtitle: "CPA : Programming Essentials in C",
+      logo_path: "cisco_netacad_logo.png",
+      certificate_link: "https://drive.google.com/file/d/1KSpZECd1E3uqCzVlTCo1v2CmfCsD0e8C/view?usp=sharing",
+      alt_name: "Cisco Netacad",
+      color_code: "#fff",
     },
     {
-      title: "Competitive Programming",
-      subtitle: "Google Hash Code",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1sD6GS8f2Fh5MHMWlf5DhXoMhu4mykW-f/view",
-      alt_name: "Reply",
-      color_code: "#2AAFED",
+      title: "Cisco Netacad",
+      subtitle: "Introduction to IoT",
+      logo_path: "cisco_netacad_logo.png",
+      certificate_link: "https://drive.google.com/file/d/1MA_eYf3V450evVA1Prc-4vKHJqR7kQJ3/view?usp=sharing",
+      alt_name: "Cisco Netacad",
+      color_code: "#fff",
     },
     {
-      title: "Training",
-      subtitle: "30 Days of Open Source",
-      logo_path: "CFC.jfif",
-      certificate_link:
-        "https://drive.google.com/file/d/1SAKHjKisJIY3-FRZQGKLusdsGDusXAjX/view",
-      alt_name: "Postman",
-      // color_code: "#f36c3d",
-      color_code: "#a60000",
+      title: "Cisco Netacad",
+      subtitle: "Introduction to Cybersecurity",
+      logo_path: "cisco_netacad_logo.png",
+      certificate_link: "https://drive.google.com/file/d/1MUUGYQsjFQMPKURJSJn2_oEfzOH-xBV8/view?usp=sharing",
+      alt_name: "Cisco Netacad",
+      color_code: "#fff",
     },
     {
-      title: "Training",
-      subtitle: "Git Learning",
-      logo_path: "Progate.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1sD6GS8f2Fh5MHMWlf5DhXoMhu4mykW-f/view",
-      alt_name: "Reply",
-      color_code: "#88e7ce",
+      title: "Cisco Netacad",
+      subtitle: "Introduction to Packet Tracer",
+      logo_path: "cisco_netacad_logo.png",
+      certificate_link: "https://drive.google.com/file/d/1K-9nxewnDg1Z-IRQRSas2D69AuhmJ6_z/view?usp=sharing",
+      alt_name: "Cisco Netacad",
+      color_code: "#fff",
     },
-    // color_code: "#8C151599",
-    // color_code: "#7A7A7A",
-    // color_code: "#0C9D5899",
-    // color_code: "#C5E2EE",
-    // color_code: "#ffc475",
-    // color_code: "#g",
-    // color_code: "#ffbfae",
-    // color_code: "#fffbf3",
-    // color_code: "#b190b0",
+    {
+      title: "Cisco Netacad",
+      subtitle: "CCNAv7: Introduction to Networks",
+      logo_path: "cisco_netacad_logo.png",
+      certificate_link: "https://drive.google.com/file/d/1H54MLFMVBmjmXDp5gs73wM3sUE7K-6lG/view?usp=sharing",
+      alt_name: "Cisco Netacad",
+      color_code: "#fff",
+    },
+    {
+      title: "E-Summit - By E-Cell IIT Bombay 2021",
+      subtitle: "Certificate Of Participation",
+      logo_path: "E-Summit_logo.png",
+      certificate_link: "https://drive.google.com/file/d/1dJWwCMeI8hS0xwUfwYAPqRTN3vyrUYnd/view?usp=sharing",
+      alt_name: "E-Summit - By E-Cell IIT Bombay 2021",
+      color_code: "#6f42c1",
+    },
+    {
+      title: "Hack This Fall",
+      subtitle: "Certificate Of Participation",
+      logo_path: "hackThisFall.png",
+      certificate_link: "https://drive.google.com/file/d/1Ydnmn1RSm7jAtjQIX_AXGjU0u704g5KQ/view?usp=sharing",
+      alt_name: "Hack This Fall",
+      color_code: "#fff",
+    },
   ],
 };
 
@@ -426,7 +386,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internships ,VolunteerShips,Achievements and clubs",
   description:
-    "I've completed two internship and One Job. I've mostly done projects on my own and I am actively looking for New work. I love organizing workshops to share my knowledge with others.",
+    "Passionate web developer with 1+ year of experience working on industrial projects . Intuitive and inquisitive learner willing to work and contribute towards individual and organizational growth.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -439,17 +399,17 @@ const experience = {
           logo_path: "aiits_logo.png",
           duration: "Dec 2021 - present",
           location: "Nagpur",
-          description: "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+          description: " Developed web applications for clients in an agile environment using reusable, scalable and efficient code, principles and patterns.Technology Stack : 1.FrontEnd Languages and Frameworks - ReactJS, ReactNative,  2.Backend Languages and Frameworks - NodeJS, ExpressJS, 3. Database - MongoDB, MySql, 4. Cloud Services - AWS Cloud Services, Contabo, 5. Third-Party Services - SendGrid",
           color: "#0071C5",
         },
         {
           title: "Full stack developer",
           company: "3BIT DIGITAL",
-          company_url: "https://3bitdigital.com",
+          company_url: "https://www.linkedin.com/company/3-bit-digital/",
           logo_path: "3bit_digital_logo.png",
           duration: "July 2021 - Dec 2021",
           location: "Jabalpur",
-          description: "Created Front end of Yearn Financial Mutual Funds website. also designed simple web application for better user experience, designed DB Schemas as well.",
+          description: "Developed E-commerce,Management and portfolio web applications for clients in an agile environment using reusable, scalable and efficient code, principles and patterns.Technology Stack : 1.FrontEnd Languages and Frameworks - ReactJS, NextJS,  2.Backend Languages and Frameworks - NodeJS, ExpressJS 3. Database - MongoDB, 4. Cloud Services - AWS Cloud Services",
           color: "#ee3c26",
         },
         {
@@ -459,7 +419,7 @@ const experience = {
           logo_path: "wingz_logo.png",
           duration: "May 2021 - July 2021",
           location: "Jabalpur",
-          description: "Created Front end of  website. also designed simple web application for better user experience, designed DB Schemas as well.",
+          description: "Developed Front end of for the Academy and designed simple web application for better user experience.Technology Stack : 1.FrontEnd Languages  - Html, Css, JavaScript, 2.Backend Languages  - Php 3. Database - MySql ",
           color: "#000",
         },
         {
@@ -469,8 +429,8 @@ const experience = {
           logo_path: "fashup-logo2.jpg",
           duration: "April 2021 - May 2021",
           location: "Remote",
-          description: "Created Front end of Fashup and dashboard. also designed simple web application for better user experience, designed DB Schemas as well and created Location api for getting information about user location.",
-          color: "#ee3c26",
+          description: "Developed Front end dashboard and designed DB Schemas as well and created RestFul web api. Technology Stack : 1.FrontEnd Languages and Frameworks - ReactJS,  2.Backend Languages and Frameworks - NodeJS, ExpressJS 3. Database - MongoDB",
+          color: "#fff",
         },
       ],
     },
@@ -480,23 +440,21 @@ const experience = {
         {
           title: "Technical Core Lead",
           company: "Code chef chapters",
-          company_url: "https://bagcampus.in/",
+          company_url: "#",
           logo_path: "codechef_chapter_ggits.jpg",
           duration: "Mar 2020 - Present",
           location: "Jabalpur",
-          description:
-            "Spread Awareness of new Technologies and Companies and new Opportunities to Students and Grow Bagcampus Community.",
+          description: "Conduct various seminar and competitions in college through codechef and Educate student about the programming.",
           color: "#0059c9",
         },
         {
           title: "Technical Core Lead",
           company: "Web masters club GGITS",
-          company_url: "https://indiaenvironment.org/",
+          company_url: "#",
           logo_path: "webmasters_ggits.jpg",
           duration: "Dec 2020 - Present",
           location: "Jabalpur",
-          description:
-            "As a member of the global Crowdsource community one can gain recognition from other Crowdsourcers and Google.",
+          description: "Conduct workshops and competitions on website development and maintain and added new features implementation on College official website under guidance of HoD.",
           color: "#ffffff",
         },
         {
@@ -506,8 +464,7 @@ const experience = {
           logo_path: "Ecell_logo.jpg",
           duration: "May 2020 - present",
           location: "Jabalpur",
-          description:
-            "Take time out over weekends to join a gang of nation builders, nature enthusiasts to conserve what is left.",
+          description: "Conducted various events and activities of E-cell and spearheaded initiatives to promote Entrepreneurship and Participated in NEC Challenge by E-cell IIT Bombay.",
           color: "#282b6c",
         },
       ],
@@ -518,9 +475,9 @@ const experience = {
         {
           title: "Smart India Hackathon 2022",
           company: "Zonal Round Finalist",
-          company_url: "https://indiaenvironment.org/",
-          logo_path: "GCS.jfif",
-          duration: "2021 - 2022",
+          company_url: "https://www.sih.gov.in/",
+          logo_path: "SIH-logo.png",
+          duration: "2022",
           location: "Jabalpur",
           description:
             "As a member of the global Crowdsource community one can gain recognition from other Crowdsourcers and Google.",
@@ -529,9 +486,9 @@ const experience = {
         {
           title: "Microsoft Imagine cup 2021",
           company: "All Indian Finalist and secured 3rd rank",
-          company_url: "https://indiaenvironment.org/",
-          logo_path: "NSS.jfif",
-          duration: "2020- 2021",
+          company_url: "https://imaginecup.microsoft.com/en-us/Events",
+          logo_path: "microsoft_image_cup.jpg",
+          duration: "2020-2021",
           location: "Remote",
           description:
             "Take time out over weekends to join a gang of nation builders, nature enthusiasts to conserve what is left.",
@@ -571,43 +528,91 @@ const projects = {
   data: [
     {
       id: "0",
-      name: "Mind Space",
-      url: "https://www.mindspace.cf/",
+      name: "Chatting-Go",
+      url: "https://chatting-go.vercel.app/login",
       description:
         "This is Blogging website where users can create blogs, follow and unfollow other users, get summarized blog reccomendation on their dashboard and have a personalised searching mechanism.",
       languages: [
         {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
+          name: "Versel",
+          iconifyClass: "logos-vercel",
         },
         {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
+          name: "Heroku-App",
+          iconifyClass: "logos-heroku",
         },
         {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
+          name: "MongoDB",
+          iconifyClass: "logos-mongodb",
         },
         {
-          name: "Python",
-          iconifyClass: "logos-python",
+          name: "NodeJS",
+          iconifyClass: "logos-nodejs",
         },
         {
-          name: "Flask",
-          iconifyClass: "cib-flask",
+          name: "Github",
+          iconifyClass: "logos-github",
+        },
+        {
+          name: "Git",
+          iconifyClass: "logos-git",
+        },
+        {
+          name: "ExpressJS",
+          iconifyClass: "logos-express",
+        },
+        {
+          name: "ReactJS",
+          iconifyClass: "logos-react",
         },
       ],
     },
     {
       id: "1",
-      name: "Youtube Downloader",
+      name: "Rajarshri Chhatrapati Shahu Maharaj Foreign Scholarship",
       url: "https://github.com/vvHacker007/Youtube-Downloader/",
       description:
         "A desktop GUI which can be used to download youtube videos and playlist with desired quality and type on desktop.",
       languages: [
         {
-          name: "Python",
-          iconifyClass: "logos-python",
+          name: "MongoDB",
+          iconifyClass: "logos-mongodb",
+        },
+        {
+          name: "NodeJS",
+          iconifyClass: "logos-nodejs",
+        },
+        {
+          name: "ExpressJS",
+          iconifyClass: "logos-express",
+        },
+        {
+          name: "Github",
+          iconifyClass: "logos-github",
+        },
+        {
+          name: "Git",
+          iconifyClass: "logos-git",
+        },
+        {
+          name: "ReactJS",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Bootstrap",
+          iconifyClass: "logos-bootstrap",
+        },
+        {
+          name: "Redux",
+          iconifyClass: "logos-redux",
+        },
+        {
+          name: "Ubuntu",
+          iconifyClass: "logos-ubuntu",
+        },
+        {
+          name: "Nginx",
+          iconifyClass: "logos-nginx",
         },
       ],
     },
