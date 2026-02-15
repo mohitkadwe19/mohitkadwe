@@ -13,7 +13,8 @@ export default function About() {
   return (
     <section id="about" className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12">
+        <h2 className="text-3xl font-bold mb-12 font-display">
+          <span className="block w-8 h-0.5 rounded-full bg-gradient-to-r from-accent to-accent-secondary mb-3" />
           About Me
           <span className="gradient-text">.</span>
         </h2>

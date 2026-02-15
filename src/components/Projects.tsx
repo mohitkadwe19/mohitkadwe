@@ -9,8 +9,8 @@ const containerVariants = {
 } as const;
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 25 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeOut" as const } },
 };
 
 export default function Projects() {
@@ -22,8 +22,9 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-12"
+          className="text-3xl font-bold mb-12 font-display"
         >
+          <span className="block w-8 h-0.5 rounded-full bg-gradient-to-r from-accent to-accent-secondary mb-3" />
           Featured Projects
           <span className="gradient-text">.</span>
         </motion.h2>

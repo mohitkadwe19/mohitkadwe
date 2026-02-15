@@ -30,6 +30,7 @@
   --color-accent-secondary: var(--accent-secondary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-sora);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -146,20 +147,38 @@ html.theme-switching *::after {
 
 /* Hover glow on cards */
 .card-hover {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 .card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-color: var(--accent);
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.08);
 }
 .dark .card-hover:hover {
-  box-shadow: 0 4px 20px rgba(103, 232, 249, 0.08);
+  border-color: var(--accent);
+  box-shadow: 0 8px 25px -5px rgba(103, 232, 249, 0.1);
 }
 
 /* Firefox scrollbar */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--card-border) transparent;
+}
+
+/* Subtle grain texture for atmospheric depth */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.018;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+.dark body::after {
+  opacity: 0.035;
 }
 
 /* Respect reduced motion preference */

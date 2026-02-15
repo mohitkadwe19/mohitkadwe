@@ -10,8 +10,8 @@ const containerVariants = {
 } as const;
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+  hidden: { opacity: 0, x: -30 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
 };
 
 export default function Experience() {
@@ -23,8 +23,9 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-12"
+          className="text-3xl font-bold mb-12 font-display"
         >
+          <span className="block w-8 h-0.5 rounded-full bg-gradient-to-r from-accent to-accent-secondary mb-3" />
           Work Experience
           <span className="gradient-text">.</span>
         </motion.h2>
@@ -40,14 +41,17 @@ export default function Experience() {
           <div className="absolute left-[7px] md:left-[11px] top-2 bottom-2 w-px bg-gradient-to-b from-accent via-accent-secondary to-transparent" />
 
           <div className="space-y-8">
-            {experienceData.map((exp) => (
+            {experienceData.map((exp, index) => (
               <motion.div
                 key={exp.company}
                 variants={cardVariants}
                 className="relative pl-8 md:pl-12"
               >
-                {/* Timeline dot */}
-                <div className="absolute left-0 md:left-1 top-6 w-[15px] h-[15px] rounded-full bg-accent/20 flex items-center justify-center">
+                {/* Timeline dot — current role gets a pulse */}
+                <div className={`absolute left-0 md:left-1 top-6 w-[15px] h-[15px] rounded-full bg-accent/20 flex items-center justify-center ${index === 0 ? "ring-[3px] ring-accent/15" : ""}`}>
+                  {index === 0 && (
+                    <span className="absolute inset-0 rounded-full bg-accent/25 animate-ping" />
+                  )}
                   <div className="w-[7px] h-[7px] rounded-full bg-accent" />
                 </div>
 

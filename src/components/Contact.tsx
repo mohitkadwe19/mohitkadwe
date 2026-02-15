@@ -9,15 +9,15 @@ export default function Contact() {
     <section id="contact" className="py-16 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, filter: "blur(6px)" }}
+          whileInView={{ opacity: 1, filter: "blur(0px)" }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
           <p className="text-xs font-semibold text-accent uppercase tracking-wider mb-4 font-mono">
             What&apos;s Next?
           </p>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display">
             Let&apos;s Build Together
             <span className="gradient-text">.</span>
           </h2>

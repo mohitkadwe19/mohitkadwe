@@ -9,8 +9,8 @@ const containerVariants = {
 } as const;
 
 const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } },
+  hidden: { opacity: 0, scale: 0.92 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.4, ease: "easeOut" as const } },
 };
 
 export default function Skills() {
@@ -22,8 +22,9 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-12"
+          className="text-3xl font-bold mb-12 font-display"
         >
+          <span className="block w-8 h-0.5 rounded-full bg-gradient-to-r from-accent to-accent-secondary mb-3" />
           Technical Skills
           <span className="gradient-text">.</span>
         </motion.h2>
@@ -48,7 +49,7 @@ export default function Skills() {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1.5 text-[13px] rounded-lg bg-background text-foreground/80 font-medium border border-card-border"
+                    className="px-3 py-1.5 text-[13px] rounded-lg bg-background text-foreground/80 font-medium border border-card-border hover:border-accent/50 hover:text-accent hover:-translate-y-0.5 transition-all duration-200 cursor-default"
                   >
                     {skill}
                   </span>

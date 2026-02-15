@@ -47,7 +47,7 @@ export default function Hero() {
         </motion.p>
 
         {/* Name with staggered word reveal */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-3">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-3 font-display">
           {nameWords.map((word, i) => (
             <motion.span
               key={`${word}-${i}`}

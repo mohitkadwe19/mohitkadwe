@@ -28,8 +28,9 @@ export default function Achievements() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold mb-12"
+          className="text-3xl font-bold mb-12 font-display"
         >
+          <span className="block w-8 h-0.5 rounded-full bg-gradient-to-r from-accent to-accent-secondary mb-3" />
           Achievements
           <span className="gradient-text">.</span>
         </motion.h2>
