@@ -6,7 +6,7 @@
   --card: #f8fafc;
   --card-border: #e2e8f0;
   --muted: #475569;
-  --accent: #0284c7;
+  --accent: #0369a1;
   --accent-secondary: #6366f1;
 }
 
@@ -41,6 +41,14 @@
 
 a, button {
   cursor: pointer;
+}
+
+/* CTA button text — unlayered to override Tailwind utilities */
+.cta-btn {
+  color: #fff;
+}
+.dark .cta-btn {
+  color: #0f172a;
 }
 
 body {
@@ -86,7 +94,7 @@ html.theme-switching *::after {
   z-index: 1;
   background: radial-gradient(
     600px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
-    rgba(14, 165, 233, 0.04),
+    rgba(3, 105, 161, 0.04),
     transparent 80%
   );
   transition: background 0.15s;

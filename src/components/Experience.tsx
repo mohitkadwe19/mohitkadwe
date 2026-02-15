@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Briefcase, MapPin } from "lucide-react";
 import { experienceData } from "@/data/portfolio";
 

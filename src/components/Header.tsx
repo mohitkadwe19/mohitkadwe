@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Moon, Sun, Monitor } from "lucide-react";
 import { navItems } from "@/data/portfolio";
 
