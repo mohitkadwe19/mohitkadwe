@@ -17,7 +17,7 @@ export default function Footer() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-xs text-muted/60 hover:text-foreground transition-colors"
+                className="text-xs text-muted hover:text-foreground transition-colors"
               >
                 {item.label}
               </a>
@@ -25,12 +25,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 border-t border-card-border">
-          <p className="text-xs text-muted/60">
+          <p className="text-xs text-muted">
 &copy; {new Date().getFullYear()} {siteConfig.name}
           </p>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="text-xs text-muted/60 hover:text-accent transition-colors"
+            className="text-xs text-muted hover:text-accent transition-colors"
           >
             {siteConfig.email}
           </a>

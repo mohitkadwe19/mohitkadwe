@@ -16,8 +16,8 @@
   --card: rgba(30, 41, 59, 0.5);
   --card-border: rgba(148, 163, 184, 0.1);
   --muted: #94a3b8;
-  --accent: #22d3ee;
-  --accent-secondary: #818cf8;
+  --accent: #67e8f9;
+  --accent-secondary: #a5b4fc;
 }
 
 @theme inline {
@@ -93,7 +93,7 @@ html.theme-switching *::after {
 .dark .spotlight {
   background: radial-gradient(
     600px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
-    rgba(34, 211, 238, 0.06),
+    rgba(103, 232, 249, 0.05),
     transparent 80%
   );
 }
@@ -153,7 +153,7 @@ html.theme-switching *::after {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 .dark .card-hover:hover {
-  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.08);
+  box-shadow: 0 4px 20px rgba(103, 232, 249, 0.08);
 }
 
 /* Firefox scrollbar */

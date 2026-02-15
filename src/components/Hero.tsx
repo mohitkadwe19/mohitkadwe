@@ -100,7 +100,7 @@ export default function Hero() {
         >
           <a
             href={`mailto:${siteConfig.email}`}
-            className="group px-7 py-3 bg-accent text-white rounded-full font-medium text-sm inline-flex items-center gap-2 hover:shadow-lg hover:shadow-accent/20 transition-all duration-300"
+            className="group px-7 py-3 bg-accent text-white dark:text-[#0f172a] rounded-full font-medium text-sm inline-flex items-center gap-2 hover:shadow-lg hover:shadow-accent/20 transition-all duration-300"
           >
             <Mail size={16} />
             {heroData.cta.primary.label}

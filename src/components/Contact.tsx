@@ -33,7 +33,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="group inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-white rounded-full font-medium text-sm hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 mb-10"
+          className="group inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-white dark:text-[#0f172a] rounded-full font-medium text-sm hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 mb-10"
         >
           <Mail size={16} />
           Discuss a Role
