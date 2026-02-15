@@ -8,11 +8,16 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "browserslist": [
+    "Chrome >= 109",
+    "Firefox >= 115",
+    "Safari >= 16.4",
+    "Edge >= 109"
+  ],
   "dependencies": {
     "lucide-react": "^0.563.0",
     "motion": "^12.34.0",
     "next": "16.1.6",
-    "nextjs": "^0.0.3",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
