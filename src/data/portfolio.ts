@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Full Stack Engineer",
   description:
     "Full Stack Engineer with 5+ years building high-scale SaaS products using TypeScript, React, Node.js, Express, and PostgreSQL. Experienced in fintech, BNPL systems, and AI-powered solutions across MENA region.",
-  url: "https://mohitkadwe.dev",
+  url: "https://mohitkadwe.tech",
   email: "mohitdkadwe19@gmail.com",
   location: "Saudi Arabia",
   links: {
