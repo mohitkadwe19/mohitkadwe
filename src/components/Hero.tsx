@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ArrowDown, Download, Mail } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
 import { heroData, siteConfig } from "@/data/portfolio";
 
 const wordVariants = {
@@ -104,15 +104,6 @@ export default function Hero() {
           >
             <Mail size={16} />
             {heroData.cta.primary.label}
-          </a>
-          <a
-            href={heroData.cta.secondary.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-7 py-3 glass font-medium text-sm inline-flex items-center gap-2 text-foreground hover:border-accent/50 transition-all duration-300 rounded-full"
-          >
-            <Download size={16} />
-            {heroData.cta.secondary.label}
           </a>
         </motion.div>
 

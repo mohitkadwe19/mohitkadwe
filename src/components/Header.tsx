@@ -70,7 +70,8 @@ export default function Header() {
     e.preventDefault();
     setIsOpen(false);
     const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    // smooth scroll gets cancelled if it starts while the mobile menu is collapsing
+    setTimeout(() => el?.scrollIntoView({ behavior: "smooth" }), isOpen ? 250 : 0);
   };
 
   useEffect(() => {

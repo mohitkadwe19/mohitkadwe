@@ -49,10 +49,12 @@ export const metadata: Metadata = {
     "PostgreSQL",
     "AWS Developer",
     "AI Solutions Engineer",
+    "Fraud Detection Engineer",
     "Remote Developer",
     "India Software Engineer",
-    "Saudi Arabia Developer",
     "Dubai Developer",
+    "kordrun",
+    "PostMint",
     "React Native Developer",
     "Next.js Developer",
     "Express.js Developer",
@@ -70,8 +72,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/profile.jpeg",
-        width: 800,
-        height: 800,
+        width: 1280,
+        height: 960,
         alt: `${siteConfig.name} — ${siteConfig.title}`,
       },
     ],
@@ -136,6 +138,7 @@ const jsonLd = {
           "Python",
           "AI Solutions",
           "BNPL Systems",
+          "Fraud Detection",
           "Fintech",
         ],
         worksFor: {
@@ -149,8 +152,7 @@ const jsonLd = {
         },
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Riyadh",
-          addressCountry: "SA",
+          addressCountry: "IN",
         },
       },
     },

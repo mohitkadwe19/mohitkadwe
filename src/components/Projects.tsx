@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { ArrowUpRight } from "lucide-react";
 import { projectsData } from "@/data/portfolio";
 
 const containerVariants = {
@@ -43,7 +44,21 @@ export default function Projects() {
               className="glass card-hover p-6 flex flex-col"
             >
               <div className="flex items-start justify-between gap-3 mb-3">
-                <h3 className="text-lg font-semibold">{project.title}</h3>
+                <h3 className="text-lg font-semibold">
+                  {project.url ? (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener"
+                      className="inline-flex items-center gap-1 hover:text-accent transition-colors"
+                    >
+                      {project.title}
+                      <ArrowUpRight size={16} aria-hidden="true" />
+                    </a>
+                  ) : (
+                    project.title
+                  )}
+                </h3>
                 <span className="text-[11px] font-mono font-medium text-accent bg-accent/10 px-2.5 py-1 rounded-full shrink-0">
                   {project.context}
                 </span>
