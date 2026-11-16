@@ -86,11 +86,11 @@ export default function Experience() {
                     {exp.highlights.map((point, j) => (
                       <li
                         key={j}
-                        className={`text-sm text-muted leading-relaxed flex gap-2 ${
+                        className={`text-sm text-muted leading-relaxed flex items-baseline gap-2 ${
                           j >= VISIBLE_HIGHLIGHTS && !expanded[exp.company] ? "hidden" : ""
                         }`}
                       >
-                        <span className="text-accent mt-1 shrink-0">›</span>
+                        <span className="text-accent shrink-0">›</span>
                         {point}
                       </li>
                     ))}
