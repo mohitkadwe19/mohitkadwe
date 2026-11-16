@@ -1,7 +1,8 @@
 "use client";
 
+import { Fragment } from "react";
 import { motion } from "motion/react";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, Mail, Github, Linkedin } from "lucide-react";
 import { heroData, siteConfig } from "@/data/portfolio";
 
 const wordVariants = {
@@ -49,16 +50,18 @@ export default function Hero() {
         {/* Name with staggered word reveal */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-3 font-display">
           {nameWords.map((word, i) => (
-            <motion.span
-              key={`${word}-${i}`}
-              custom={i}
-              initial="hidden"
-              animate="visible"
-              variants={wordVariants}
-              className="inline-block mr-4 last:mr-0"
-            >
-              {word}
-            </motion.span>
+            <Fragment key={`${word}-${i}`}>
+              <motion.span
+                custom={i}
+                initial="hidden"
+                animate="visible"
+                variants={wordVariants}
+                className="inline-block mr-4 last:mr-0"
+              >
+                {word}
+              </motion.span>
+              {i < nameWords.length - 1 && " "}
+            </Fragment>
           ))}
           <motion.span
             initial={{ opacity: 0, scale: 0 }}
@@ -105,6 +108,23 @@ export default function Hero() {
             <Mail size={16} />
             {heroData.cta.primary.label}
           </a>
+          <div className="flex items-center gap-3">
+            {[
+              { href: siteConfig.links.linkedin, icon: Linkedin, label: "LinkedIn" },
+              { href: siteConfig.links.github, icon: Github, label: "GitHub" },
+            ].map(({ href, icon: Icon, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass card-hover p-3 text-muted hover:text-accent transition-colors"
+                aria-label={label}
+              >
+                <Icon size={18} />
+              </a>
+            ))}
+          </div>
         </motion.div>
 
         {/* Scroll indicator */}

@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.title} | TypeScript, React, Node.js`,
+    default: `${siteConfig.name} — ${siteConfig.title} | Payments & Fraud Systems`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -69,20 +69,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.description,
-    images: [
-      {
-        url: "/images/profile.jpeg",
-        width: 1280,
-        height: 960,
-        alt: `${siteConfig.name} — ${siteConfig.title}`,
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.description,
-    images: ["/images/profile.jpeg"],
   },
   robots: {
     index: true,
@@ -117,9 +108,8 @@ const jsonLd = {
         jobTitle: siteConfig.title,
         description: siteConfig.description,
         url: siteConfig.url,
-        email: siteConfig.email,
         image: `${siteConfig.url}/images/profile.jpeg`,
-        sameAs: [siteConfig.links.github, siteConfig.links.linkedin, siteConfig.links.linktree],
+        sameAs: [siteConfig.links.github, siteConfig.links.linkedin, siteConfig.links.x, siteConfig.links.linktree],
         knowsAbout: [
           "TypeScript",
           "React",
@@ -131,7 +121,6 @@ const jsonLd = {
           "REST APIs",
           "AWS",
           "Docker",
-          "Kubernetes",
           "Microservices",
           "React Native",
           "Next.js",

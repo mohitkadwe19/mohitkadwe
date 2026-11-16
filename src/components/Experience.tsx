@@ -1,8 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "motion/react";
-import { Briefcase, MapPin } from "lucide-react";
+import { Briefcase, MapPin, ChevronDown } from "lucide-react";
 import { experienceData } from "@/data/portfolio";
+
+const VISIBLE_HIGHLIGHTS = 3;
 
 const containerVariants = {
   hidden: {},
@@ -15,6 +18,8 @@ const cardVariants = {
 };
 
 export default function Experience() {
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+
   return (
     <section id="experience" className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
@@ -81,13 +86,34 @@ export default function Experience() {
                     {exp.highlights.map((point, j) => (
                       <li
                         key={j}
-                        className="text-sm text-muted leading-relaxed flex gap-2"
+                        className={`text-sm text-muted leading-relaxed flex gap-2 ${
+                          j >= VISIBLE_HIGHLIGHTS && !expanded[exp.company] ? "hidden" : ""
+                        }`}
                       >
                         <span className="text-accent mt-1 shrink-0">›</span>
                         {point}
                       </li>
                     ))}
                   </ul>
+
+                  {exp.highlights.length > VISIBLE_HIGHLIGHTS && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setExpanded((prev) => ({ ...prev, [exp.company]: !prev[exp.company] }))
+                      }
+                      aria-expanded={!!expanded[exp.company]}
+                      className="mb-4 inline-flex items-center gap-1.5 text-xs font-mono font-medium text-accent hover:underline"
+                    >
+                      {expanded[exp.company]
+                        ? "Show less"
+                        : `Show ${exp.highlights.length - VISIBLE_HIGHLIGHTS} more`}
+                      <ChevronDown
+                        size={14}
+                        className={`transition-transform ${expanded[exp.company] ? "rotate-180" : ""}`}
+                      />
+                    </button>
+                  )}
 
                   <div className="flex flex-wrap gap-1.5">
                     {exp.tech.map((t) => (
